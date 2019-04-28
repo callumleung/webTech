@@ -1,0 +1,115 @@
+body
+{
+    background-color: black;
+}
+
+#content
+{
+    float: left;
+    background-color: white;
+
+}
+
+#container
+{
+    float: bottom;
+    width: auto;
+}
+
+#menu
+{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: darkred;
+    color: pink;
+}
+
+a.menuitem
+{
+    font-family: Arial, serif;
+    text-align: right;
+    font-weight: bolder;
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: darkorchid;
+}
+
+a.menuitem:last-child{
+    border-bottom: none;
+}
+
+#logo, #logo a
+{
+    font-family: Arial;
+    width: auto;
+    text-align: right;
+    background-color: maroon;
+    color: lightpink;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#trail, #trail a
+{
+    width: auto;
+    text-align: center;
+    background-color: white;
+    color: maroon;
+
+}
+
+#content a
+{
+
+}
+
+#content a:hover, #content a:active
+{
+
+}
+
+h1, h2
+{
+
+}
+
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+#trail a
+{
+
+}
+
+#logo a
+{
+
+}
+
+#menu a
+{
+
+}
+
+.menuitem:hover
+{
+
+}
+
+#image {
+
+}
+
+/* layout */
+

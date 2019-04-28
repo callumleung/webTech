@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>A Braille Quiz</title>
+	<link rel="stylesheet" type="text/css" href="braille-QUIZ.css" />
+	<script type="text/javascript" src="validate-QUIZ.js"></script>
+</head>
+
+<body>
+
+<div id="content">
+
+<h1>A Braille Quiz</h1>
+
+
+<div id="quiz">
+
+<form onsubmit="return validate();" method="post" action="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/scripts/formscript.php">
+
+<h2>A Braille Quiz</h2>
+
+<fieldset>
+	<legend>About You</legend>
+  		<p id="UserInfo">What is your name?</p>
+		<div>
+			<input type="text" name="UserInfo" size="40" />
+		</div>
+  
+</fieldset>
+
+<fieldset>
+	<legend>The questions</legend>
+<ol>
+	<li>
+		<p id="Q1">What does this message spell?</p>
+		<div>
+			<img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/f.png" height="112" width="80" alt="A Braille sign" />
+			<img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/e.png" height="112" width="80" alt="A Braille sign" />
+			<img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/a.png" height="112" width="80" alt="A Braille sign" />
+			<img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/r.png" height="112" width="80" alt="A Braille sign" />
+			<br />
+			<select name="Q1">
+				<option value="">Choose one from the following:</option>
+				<option value="a">here</option>
+				<option value="b">were</option>
+				<option value="c">fear</option>
+				<option value="d">dear</option>
+			</select>
+		</div>
+	</li>
+
+	<li>
+		<p id="Q2">Which TWO of the following statements are TRUE?</p>
+		<div>
+			<input type="checkbox" name="Q2a" id="Q2a" /> <label for="Q2a">a) The first ten letters of the alphabet use the three dot positions to the left</label><br />
+			<input type="checkbox" name="Q2b" id="Q2b" /> <label for="Q2b">b) Special formatting marks are used for numbers and capital letters</label><br />
+			<input type="checkbox" name="Q2c" id="Q2c" /> <label for="Q2c">c) Lous Braille first published his system in 1829</label><br />
+			<input type="checkbox" name="Q2d" id="Q2d" /> <label for="Q2d">d) Braille’s original system was based on the alphabetic order of the Italian alphabet</label>
+		</div>
+	</li>
+
+	<li>
+		<p id="Q3">Which of these images correctly shows the sign for the letter k (kilo)?</p>
+		<div>
+			<input type="radio" name="Q3" id="Q3a" value="a" /> <label for="Q3a">a) <img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/k.png" height="112" width="80" alt="A Braille sign" /></label> 
+			<input type="radio" name="Q3" id="Q3b" value="b" /> <label for="Q3b">b) <img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/u.png" height="112" width="80" alt="A Braille sign" /></label> 
+			<input type="radio" name="Q3" id="Q3c" value="c" /> <label for="Q3c">c) <img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/r.png" height="112" width="80" alt="A Braille sign" /></label> 
+			<input type="radio" name="Q3" id="Q3d" value="d" /> <label for="Q3d">d) <img src="https://internal.cs.ncl.ac.uk/modules/2018-19/csc8004/braille/letters/j.png" height="112" width="80" alt="A Braille sign" /></label>
+		</div>
+	</li>
+
+	<li>
+		<p id="Q4">Who developed night writing, the tactile military code that Braille was based on?</p>
+		<div>
+			<input type="text" name="Q4" size="40" />
+		</div>
+	</li>
+
+</ol>
+
+<input type="hidden" name="thisScore" />
+
+</fieldset>
+
+<fieldset>
+	<legend>Submit your answers</legend>
+
+<div>
+	<input type="submit" value="Submit" /> or <input type="reset" value="Reset" />
+</div>
+
+</fieldset>
+
+
+
+
+</form>
+</div>
+
+
+<div id="footer">  
+	<p>Answers can be found at <a href="https://en.wikipedia.org/wiki/Braille">Wikipedia</a></p>
+</div>
+
+</div>
+
+</body>
+</html>
+

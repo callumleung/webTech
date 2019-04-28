@@ -1,0 +1,40 @@
+body{
+    column-count: 2;
+    column-gap: 0;
+    column-rule: 1px solid black;
+
+}
+
+h1{
+    background-color: lightpink;
+    color: white;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 0px;
+}
+
+.text{
+    background-color: dodgerblue;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 0px;
+    column-span: all;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

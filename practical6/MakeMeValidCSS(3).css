@@ -1,0 +1,143 @@
+body
+{
+background-color: rgb(0,0,0);
+color: rgb(255,76,19);
+font-family: Georgia, serif;
+border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px;
+border-left-style: none; border-right-style: none; border-top-style: none; border-bottom-style: none;
+border-color: rgb(255,255,255);
+}
+
+#content
+{
+font-size: 92%;
+background-color: rgb(0,0,0);
+color: rgb(255,76,19);
+border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px;
+border-left-style: inset; border-right-style: inset; border-top-style: inset; border-bottom-style: inset;
+padding: 29px 29p 29px 29px;
+border-color: rgb(0,0,0);
+text-align: left;
+}
+
+#menu
+{
+background-color: rgb(69,53,36);
+color: rgb(210,114,75);
+font-family: "Trebuchet MS", sans-serif;
+font-style: normal;
+border-color: rgb(208,67,89);
+}
+
+a.menuitem
+{
+font-size: 151%;
+background-color: rgb(69,53,36);
+color: rgb(210,114,75);
+font-variant: normal;
+text-transform: capitalise;
+font-weight: normal;
+margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;
+border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px;
+border-left-style: none; border-right-style: none; border-top-style: none; border-bottom-style: none;
+border-color: rgb(255,76,19);
+text-align: left;
+}
+
+#logo, #logo a
+{
+font-size: 173%;
+background-color: rgb(0,0,0);
+color: rgb(255,76,19);
+font-family: Georgia, serif;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+font-weight: normal;
+padding: 18px 18px 18px 18px;
+border-color: rgb(256,76,19);
+text-align: center;
+}
+
+#trail, #trail a
+{
+font-size: 95%;
+background-color: rgb(255,255,255);
+color: rgb(210,114,75);
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+font-weight: normal;
+border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px;
+border-left-style: none; border-right-style: none; border-top-style: none; border-bottom-style: none;
+padding: 15px 15px 15px 15px;
+border-color: rgb(121,97,33);
+text-align: right;
+}
+
+#content a
+{
+color: rgb(208,67,89);
+text-decoration: none;
+}
+
+#content a:hover, #content a:active
+{
+background-color: rgb(208,67,89);
+color: rgb(0,0,0);
+}
+
+h1, h2
+{
+font-family: "Trebuchet MS", sans-serif;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+font-weight: bold;
+}
+
+h1
+{
+font-size: 126%;
+}
+
+h2
+{
+font-size: 111%;
+}
+
+#trail a
+{
+text-decoration: none;
+}
+
+#logo a
+{
+text-decoration: none;
+}
+
+#menu a
+{
+text-decoration: none;
+}
+
+.menuitem::hover
+{
+background-color: rgb(210,114,75);
+color: rgb(69,53,36);
+}
+
+#image {
+	vertical-align: baseline;
+	opacity: 0.5;
+}
+
+/* layout */
+.menuitem		{display: inline;}
+
+@media print
+{
+#menu       {display: none;}
+#content    {padding: 0px;}
+#content a  {text-decoration: underline;}
+}
