@@ -1,0 +1,38 @@
+body {
+    font-family: "Palatino Linotype", serif;
+
+    align-content: center;
+    min-width: 510px;
+    max-width: 960px;
+    margin: auto !important;
+    float: none !important;
+
+}
+
+fieldset{
+    border-color: #004B84;
+    border-top: 10px solid #004B84;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#footer{
+    float: right;
+}
+h1{
+    font-family: "Lucida Sans Unicode", serif;
+    font-weight: 900;
+    color: #004B84;
+    margin-bottom: -30px;
+}
+
+legend{
+    font-family: "Lucida Sans Unicode", serif;
+    font-weight: 900;
+    color: #004B84;
+}
+
+h2{
+    visibility: hidden;
+}
