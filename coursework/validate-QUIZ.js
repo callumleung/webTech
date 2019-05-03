@@ -1,15 +1,24 @@
 function checkValidName(){
 
-    var inputBox = document.getElementsByName("UserInfo");
-    console.log(inputBox.value);
-    console.log(inputBox)
+    var inputs = document.getElementsByTagName("input");
+        //document.getElementsByName("UserInfo");
+    var inputBox = inputs[0];
 
-    if(typeof inputBox.value === 'undefined'  ){
+    console.log(inputBox);
+
+    const defaultColour = inputBox.style.backgroundColor;
+
+    if(inputBox.value === ""  ){
         alert("Please enter a name.");
+        //inputBox.css('border-color', 'red');
+        inputBox.style.backgroundColor = "#FDFF47";
         return false;
     }
     else {
-        alert("good name");
+        //TODO: improve color change, current does not revert to original style
+        inputBox.style.backgroundColor = defaultColour;
+
+
        return true;
     }
 }
@@ -36,13 +45,9 @@ function checkQ1Response() {
 
 function validate() {
     //alert(document.getElementsByName("UserInfo"));
-    if (checkQ1Response()){
-        //return true
-    } else {
-        return false;
-    }
-
-    //checkValidName();
 
 
+    checkValidName();
+
+    return false;
 }
