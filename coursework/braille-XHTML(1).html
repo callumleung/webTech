@@ -14,23 +14,25 @@
 </h1>
 
 <div id="menu_bar">
-    <ul>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#system">System</a></li>
-        <li class="dropdown">
-            <a href="#en_braille" class="dropbtn">English Braille</a>
-            <div class="dropdown-content" style="right: 0;">
-                <ul>
-                    <li><a href="#letters">English Braille: Letters</a></li>
-                    <li><a href="#numbers">English Braille: Numbers </a></li>
-                </ul>
-            </div>
-        </li>
+    <ul id = "menu_items">
+        <div id="list_items">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#system">System</a></li>
+            <li class="dropdown">
+                <a href="#en_braille" class="dropbtn">English Braille</a>
+                <div class="dropdown-content" style="right: 0;">
+                    <ul>
+                        <li><a href="#letters">English Braille: Letters</a></li>
+                        <li><a href="#numbers">English Braille: Numbers </a></li>
+                    </ul>
+                </div>
+            </li>
+        </div>
     </ul>
 </div>
 
-<div id="intro" class="subsection">
+<div class="subsection">
     <h2>Introduction</h2>
 
     <p>Braille is a tactile reading and writing system used by blind and
@@ -177,7 +179,7 @@
 </div>
 <hr/>
 
-<div id="en_braille" class="subsection">
+<div id = "examples" class="subsection">
     <h2>English Braille</h2>
     <div id="en_braille_images">
         <a href="http://www.flickriver.com/photos/tags/braille/interesting/">
@@ -194,14 +196,14 @@
 
     <p>There are three levels of complexity in English Braille:</p>
     <ul id="braille_types">
-        <li><span class="bold">Grade 1</span> is a nearly one-to-one transcription of printed English and is
+        <li class="type_list"><span class="bold">Grade 1</span> is a nearly one-to-one transcription of printed English and is
             restricted to basic literacy.
         </li>
-        <li><span class="bold">Grade 2</span> abandons one-to-one transcription in many places and adds
+        <li class="type_list"><span class="bold">Grade 2</span> abandons one-to-one transcription in many places and adds
             hundreds of abbreviations and contractions. Both grades have been
             standardized.
         </li>
-        <li><span class="bold">Grade 3</span> is any of various personal shorthands. It is almost never found
+        <li class="type_list"><span class="bold">Grade 3</span> is any of various personal shorthands. It is almost never found
             in publications.
         </li>
     </ul>
@@ -211,7 +213,7 @@
         braille is an independent writing system, not a variant of the printed
         English alphabet.</p>
 
-    <hr/>
+
 
     <div id="letters">
         <h3><span style="color: #004B84"> English Braille:</span> <span style="color: #DD1E40"> Letters</span></h3>
@@ -375,7 +377,7 @@
     </div>
 
 
-    //TODO: Replace <hr>
+
     <div id="numbers">
         <h3><span style="color: #004B84"> English Braille:</span> <span style="color: #DD1E40"> Numbers</span></h3>
         <div class="number">
@@ -441,9 +443,9 @@
     </div>
 </div>
 
-<hr/>
 
-<p style="float: right;">Information from <a href="https://www.royalblind.org/">Royal Blind</a> and <a
+
+<p id="end">Information from <a href="https://www.royalblind.org/">Royal Blind</a> and <a
         href="https://en.wikipedia.org/wiki/Braille">Wikipedia</a></p>
 
 </body>

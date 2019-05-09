@@ -1,3 +1,5 @@
+
+/*set the max and min width or the page, default font, colour*/
 body {
     font-family: "Palatino Linotype", serif;
     align-content: center;
@@ -8,13 +10,7 @@ body {
 
 }
 
-dt {font-weight: bold;}
-dt, dd {padding-bottom: 5px;}
-
-#dirListing{
-    margin-left: 5%;
-}
-
+/*sets the style of the first header containing the braille logo and the large word braille*/
 h1 {
     min-width: 510px;
     max-width: 960px;
@@ -25,32 +21,28 @@ h1 {
     font-weight: 900;
     color: #004B84;
 
-    border-bottom: 10px solid #004B84;
 
-    /*height: 95px;*/
+    border-bottom: 10px solid #004B84;
 }
 
+/*sets the color and font type of the word Introduction*/
 h2 {
     font-family: "Lucida Sans Unicode", serif;
     font-weight: 900;
     color: #004B84;
 }
 
+/*moves the content slightly in from each side*/
 .subsection{
     padding-left: 5px;
     padding-right: 5px;
 }
 
-div.news{
-    margin: auto 5%;
-    border: solid thin black;
-    background-color: silver;
-    padding: 5px;
-}
-
-
-
-ul {
+/*sets the style for the menu list*/
+#menu_items {
+    border-top: 5px solid #004B84;
+    /*float: right;*/
+    height: 30px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,18 +50,28 @@ ul {
     background-color: #004B84;
 }
 
-li {
+#list_items{
     float: right;
 }
 
+
+
+/*floats each item right*/
+li {
+    display: inline;
+    //float: right;
+
+}
+
+/*sets the font color and placement for the menu item*/
 li a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
+/*move the dropdown menu beneath english braille*/
 li.dropdown {
     display: inline-block;
     float: right;
@@ -108,9 +110,7 @@ li a:hover, .dropdown:hover .dropbtn {
     background-color: #077AB2;
 }
 
-#intro {
-
-}
+/*temporary to be removed*/
 hr{
     border-bottom: 10px solid #004B84;
     padding: 0;
@@ -156,11 +156,18 @@ hr{
 #braille_types{
     padding-left: 50px;
     background-color: white;
+
+}
+
+.type_list{
+    display: list-item;
     list-style-type: disc;
     list-style-position: outside;
+    /*float: left;*/
 }
 
 #letters{
+
     display: inline;
 }
 
@@ -220,6 +227,7 @@ hr{
 }
 
 h3{
+    border-top: 10px solid #004B84;
     clear: both;
     font-weight: 900;
 }
@@ -231,4 +239,10 @@ h3{
     margin-left: 20px;
     float: left;
     margin-bottom: 10px;
+}
+
+#end{
+    width: 100%;
+    border-top: 10px solid #004B84;
+    float: right;
 }
